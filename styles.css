@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background: #222;
+    padding: 0.5rem 1rem;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background: linear-gradient(to right, #667eea, #764ba2);
+    color: #fff;
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    background: #fff;
+    color: #667eea;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background: #f0f0f0;
+}
+
+.section {
+    padding: 3rem 2rem;
+}
+
+.section-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #444;
+}
+
+.feature-list {
+    list-style: disc inside;
+    line-height: 1.6;
+}
+
+pre {
+    background: #eee;
+    padding: 1rem;
+    overflow: auto;
+    border-radius: 4px;
+}
+
+footer {
+    background: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 1rem;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 0.9rem;
+}

@@ -2,35 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="A professional website for a new programming language." />
+    <meta name="description" content="A professional website for the SMPL programming language." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SMPL Language</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <a href="#" class="logo">
-                <img src="logo.png" alt="SMPL Logo" />
-            </a>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#getting-started">Getting Started</a></li>
-                <li><a href="#docs">Docs</a></li>
-            </ul>
-        </nav>
+    <header class="hero-header">
+        <img src="logo.png" alt="SMPL Logo" class="hero-logo" />
+        <h1 class="hero-title">SMPL Language</h1>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>SMPL Language</h1>
-            <p>A simple, extensible, and powerful programming language designed for developers who love clarity and flexibility.</p>
-            <a href="#getting-started" class="btn-primary">Get Started</a>
-        </div>
-    </section>
-
-    <section id="about" class="section about">
+    <section class="section about">
         <div class="section-content">
             <h2>About SMPL</h2>
             <p>SMPL is a new programming language that focuses on readability, maintainability, and extensibility. Designed with a clean syntax and robust parsing under the hood, SMPL makes it easier to write, debug, and scale your code.</p>
@@ -38,7 +21,7 @@
         </div>
     </section>
 
-    <section id="features" class="section features">
+    <section class="section features">
         <div class="section-content">
             <h2>Key Features</h2>
             <ul class="feature-list">
@@ -46,12 +29,12 @@
                 <li><strong>Clear Syntax:</strong> SMPL's syntax is designed to be intuitive and minimal, reducing cognitive load and making your code easier to review and understand.</li>
                 <li><strong>Flexible Type System:</strong> Work seamlessly with numbers, strings, lists, and user-defined classes, all integrated into a cohesive environment.</li>
                 <li><strong>Robust Error Handling:</strong> Detailed error messages help you quickly identify and fix issues in your code.</li>
-                <li><strong>Built-In Functions &amp; Extensibility:</strong> SMPL comes with common utilities (like `get_input`, math functions) and user-defined functions are easy to integrate.</li>
+                <li><strong>Built-In &amp; User-Defined Functions:</strong> SMPL comes with common utilities (like `get_input`, math functions) and user-defined functions are easy to integrate and maintain.</li>
             </ul>
         </div>
     </section>
 
-    <section id="getting-started" class="section getting-started">
+    <section class="section getting-started">
         <div class="section-content">
             <h2>Getting Started</h2>
             <p>To begin using SMPL, clone the official repository and run the interpreter on your first SMPL file. For example:</p>
@@ -60,22 +43,19 @@ git clone https://github.com/username/smpl.git
 cd smpl
 python3 interpreter.py examples/hello_world.smpl
             </code></pre>
-            <p>You can also define your own classes, functions, and use built-in methods from our standard library. Check out the documentation below for more details.</p>
+            <p>Check out the docs for advanced usage, including creating classes, working with lists, and extending the language with new functions.</p>
         </div>
     </section>
 
-    <section id="docs" class="section docs">
+    <section class="section docs">
         <div class="section-content">
             <h2>Documentation</h2>
-            <p>Comprehensive documentation is available in the <a href="https://github.com/username/smpl/wiki" target="_blank" rel="noopener noreferrer">SMPL Wiki</a>. Learn about language syntax, advanced features, best practices, and contribute to the language's ecosystem.</p>
-            <p>As SMPL evolves, the docs will expand with tutorials, design notes, and community-driven examples.</p>
+            <p>Comprehensive documentation is available on the <a href="https://github.com/username/smpl/wiki" target="_blank" rel="noopener noreferrer">SMPL Wiki</a>. Learn about language syntax, advanced features, best practices, and how to contribute to the language's ecosystem.</p>
         </div>
     </section>
 
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2023 SMPL Language. All rights reserved.</p>
-        </div>
+    <footer class="footer">
+        <p>&copy; 2023 SMPL Language. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>

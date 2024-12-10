@@ -3,74 +3,29 @@ body {
     font-family: "Helvetica Neue", Arial, sans-serif;
     background: #f9f9f9;
     color: #333;
-}
-
-header {
-    background: #222;
-    padding: 0.5rem 1rem;
-}
-
-.navbar {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-.logo img {
-    height: 50px;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-}
-
-.nav-links li {
-    display: inline;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
-}
-
-.nav-links a:hover {
-    text-decoration: underline;
-}
-
-.hero {
-    background: linear-gradient(to right, #667eea, #764ba2);
-    color: #fff;
-    padding: 4rem 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-}
-
-.btn-primary {
+.hero-header {
     background: #fff;
-    color: #667eea;
-    padding: 0.75rem 1.5rem;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 1px solid #ddd;
 }
 
-.btn-primary:hover {
-    background: #f0f0f0;
+.hero-logo {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+
+.hero-title {
+    font-size: 3rem;
+    margin: 0;
+    color: #444;
 }
 
 .section {
@@ -92,6 +47,7 @@ header {
 .feature-list {
     list-style: disc inside;
     line-height: 1.6;
+    padding-left: 1rem;
 }
 
 pre {
@@ -99,16 +55,18 @@ pre {
     padding: 1rem;
     overflow: auto;
     border-radius: 4px;
+    font-size: 0.9rem;
 }
 
-footer {
+.footer {
     background: #222;
     color: #ccc;
     text-align: center;
     padding: 1rem;
+    margin-top: auto;
 }
 
-.footer-content p {
+.footer p {
     margin: 0;
     font-size: 0.9rem;
 }

@@ -2,62 +2,215 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="A professional website for the SMPL programming language." />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="SMPL Language - A simple educational programming language">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>SMPL Language</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="icon" href="favicon.ico" type="image/ico">
 </head>
 <body>
-    <header class="hero-header">
-        <img src="logo.png" alt="SMPL Logo" class="hero-logo" />
-        <h1 class="hero-title">SMPL Language</h1>
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <a href="#" class="logo">
+                    <img src="logo.png" alt="SMPL Logo" height="40">
+                    <span>SMPL</span>
+                </a>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#getting-started">Get Started</a></li>
+                        <li><a href="#examples">Examples</a></li>
+                        <li><a href="#community">Community</a></li>
+                        <li><a href="#download">Download</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
 
-    <section class="section about">
-        <div class="section-content">
-            <h2>About SMPL</h2>
-            <p>SMPL is a new programming language that focuses on readability, maintainability, and extensibility. Designed with a clean syntax and robust parsing under the hood, SMPL makes it easier to write, debug, and scale your code.</p>
-            <p>Whether you're building small scripts or large systems, SMPL's recursive descent parser and AST-based architecture ensure that adding new features or understanding existing code is straightforward.</p>
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>SMPL - A Simple, Educational Programming Language</h1>
+                <p>Experience the joy of learning programming language concepts through a clean, minimal, and intuitive syntax. Perfect for beginners, educators, and language enthusiasts.</p>
+                <a href="#download" class="btn download-btn">Download SMPL</a>
+            </div>
+            <div class="hero-image">
+                <img src="logo.png" alt="SMPL Logo" class="hero-logo">
+            </div>
         </div>
     </section>
 
-    <section class="section features">
-        <div class="section-content">
-            <h2>Key Features</h2>
-            <ul class="feature-list">
-                <li><strong>AST-Based Parsing:</strong> Enjoy maintainable and easily extensible code, thanks to an internal architecture that uses an Abstract Syntax Tree for all expressions.</li>
-                <li><strong>Clear Syntax:</strong> SMPL's syntax is designed to be intuitive and minimal, reducing cognitive load and making your code easier to review and understand.</li>
-                <li><strong>Flexible Type System:</strong> Work seamlessly with numbers, strings, lists, and user-defined classes, all integrated into a cohesive environment.</li>
-                <li><strong>Robust Error Handling:</strong> Detailed error messages help you quickly identify and fix issues in your code.</li>
-                <li><strong>Built-In &amp; User-Defined Functions:</strong> SMPL comes with common utilities (like `get_input`, math functions) and user-defined functions are easy to integrate and maintain.</li>
-            </ul>
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Why SMPL?</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>Lightweight & Minimal</h3>
+                    <p>SMPL's syntax and core library are minimal, helping you focus on fundamental language concepts without overwhelming complexity.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Classes & Functions</h3>
+                    <p>SMPL supports object-oriented concepts like classes and methods, as well as user-defined functions, enabling structured code and reusability.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Control Flow & Loops</h3>
+                    <p>Master conditionals, loops, and logic with simple constructs like <code>if</code>, <code>elif</code>, <code>else</code>, <code>for</code>, and <code>while</code>.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Built-in Functions & Lists</h3>
+                    <p>Utilize built-in math functions and a powerful <code>List</code> class. Easily manipulate data and build on top of these primitives.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Clear Error Messages</h3>
+                    <p>Learn effortlessly with helpful error messages guiding you to understand and fix issues in your code.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Open Source & Educational</h3>
+                    <p>Fully open source. Explore the interpreter's code, experiment, and even contribute to its development on GitHub.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="section getting-started">
-        <div class="section-content">
+    <section id="getting-started" class="getting-started">
+        <div class="container">
             <h2>Getting Started</h2>
-            <p>To begin using SMPL, clone the official repository and run the interpreter on your first SMPL file. For example:</p>
-            <pre><code>
-git clone https://github.com/username/smpl.git
-cd smpl
-python3 interpreter.py examples/hello_world.smpl
-            </code></pre>
-            <p>Check out the docs for advanced usage, including creating classes, working with lists, and extending the language with new functions.</p>
+            <p>Setting up SMPL is straightforward and quick:</p>
+            <ol>
+                <li><strong>Install Python 3.10+ & pip</strong>: Ensure Python and pip are available on your system.</li>
+                <li><strong>Clone the Repository</strong>:
+                    <pre><code>git clone https://github.com/iancarscadden/smpl.git</code></pre>
+                </li>
+                <li><strong>Install SMPL</strong>:
+                    <pre><code>cd smpl
+pip install .</code></pre>
+                </li>
+                <li><strong>Run Your First Program</strong>:
+                    <pre><code>smpl &lt;filename.smpl&gt;</code></pre>
+                </li>
+            </ol>
+            <p>After installation, verify by running:</p>
+            <pre><code>smpl</code></pre>
+            <p>You should see usage instructions if installed correctly.</p>
         </div>
     </section>
 
-    <section class="section docs">
-        <div class="section-content">
-            <h2>Documentation</h2>
-            <p>Comprehensive documentation is available on the <a href="https://github.com/username/smpl/wiki" target="_blank" rel="noopener noreferrer">SMPL Wiki</a>. Learn about language syntax, advanced features, best practices, and how to contribute to the language's ecosystem.</p>
+    <section id="examples" class="examples">
+        <div class="container">
+            <h2>Code Examples</h2>
+            <p>Check out a few SMPL code snippets that highlight the simplicity and capabilities of this language:</p>
+
+            <h3>Object-Oriented Example</h3>
+            <pre><code>class Person {
+    name = ""
+    age = ""
+    height = ""
+
+    func print_whole {
+        print("Hello, my name is " + name +
+              ". I am " + age + " years old." +
+              " My height is " + height + ".")
+    }
+}
+
+bob = new Person
+bob.name = "Bob"
+bob.age = "57"
+bob.height = "5'7"
+bob.print_whole()
+
+class Animal {
+    species = ""
+    sound = ""
+
+    func speak {
+        print("The " + species + " says " + sound)
+    }
+}
+
+dog = new Animal
+dog.species = "dog"
+dog.sound = "woof"
+dog.speak()
+
+cat = new Animal
+cat.species = "cat"
+cat.sound = "meow"
+cat.speak()</code></pre>
+
+            <h3>Functions, Arithmetic & Conditionals</h3>
+            <pre><code># Define a function to calculate the sum of two numbers
+func add using a, b {
+    return a + b
+}
+
+result_add = add(10, 20)
+print("Addition Result: " + result_add)  # Should print 30
+
+# Check if a number is even
+func is_even using number {
+    if number % 2 == 0 {
+        return true
+    } else {
+        return false
+    }
+}
+
+even_check = is_even(8)
+print("Is 8 even? " + even_check)  # Should print true</code></pre>
+
+            <h3>Loops & User Input</h3>
+            <pre><code>// For loop
+for i from 1 to 5 {
+    print("Iteration: " + i)
+}
+
+// While loop
+count = 1
+while count &lt;= 5 {
+    print("Count: " + count)
+    count = count + 1
+}
+
+// Get user input
+print("What is your name?")
+username = get_input()
+print("Nice to meet you, " + username + "!")</code></pre>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to start coding with SMPL?</h2>
+            <p>Download SMPL and begin exploring today!</p>
+            <a href="#download" class="btn download-btn">Download SMPL</a>
+        </div>
+    </section>
+
+    <section id="community" class="community">
+        <div class="container">
+            <h2>Join the Community</h2>
+            <p>SMPL is open source and welcomes contributors. Join the community on GitHub to report issues, suggest enhancements, or contribute code:</p>
+            <a href="https://github.com/iancarscadden/smpl.git" class="btn" target="_blank">View on GitHub</a>
+        </div>
+    </section>
+
+    <section id="download" class="download">
+        <div class="container">
+            <h2>Download SMPL</h2>
+            <p>Get the latest version from GitHub:</p>
+            <pre><code>git clone https://github.com/iancarscadden/smpl.git</code></pre>
+            <a href="https://github.com/iancarscadden/smpl/archive/refs/heads/main.zip" class="btn download-btn" target="_blank">Download ZIP</a>
         </div>
     </section>
 
     <footer class="footer">
-        <p>&copy; 2023 SMPL Language. All rights reserved.</p>
+        <div class="container">
+            <p>© 2024 SMPL Language. Built for learning and exploration.</p>
+        </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>

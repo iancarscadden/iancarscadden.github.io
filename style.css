@@ -1,0 +1,233 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+/* Header */
+.header {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.navbar .logo img {
+    margin-right: 10px;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links li {
+    display: inline-block;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.navbar .nav-links a:hover {
+    color: #007ACC;
+}
+
+/* Hero Section */
+.hero {
+    /* Subtle gradient for sheen */
+    background: linear-gradient(135deg, #333, #222);
+    color: #fff;
+    padding: 80px 0;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-logo {
+    max-width: 400px; /* Increased size */
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+/* Red background for download button */
+.download-btn {
+    background: #c00;
+}
+
+.download-btn:hover {
+    background: #900;
+}
+
+/* Features Section */
+.features {
+    background: #fff;
+    padding: 60px 0;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.feature-card {
+    background: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.feature-card h3 {
+    margin-top: 0;
+}
+
+/* Getting Started */
+.getting-started {
+    background: #fafafa;
+    padding: 60px 0;
+}
+
+.getting-started h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Examples */
+.examples {
+    background: #fff;
+    padding: 60px 0;
+}
+
+.examples h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.examples pre {
+    background: #eee;
+    padding: 20px;
+    overflow-x: auto;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+/* CTA Section (Bottom Banner) */
+.cta-section {
+    /* Same dark gradient as hero section for sheen */
+    background: linear-gradient(135deg, #333, #222);
+    color: #fff;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.cta-section h2 {
+    margin-bottom: 20px;
+}
+
+/* Community */
+.community {
+    background: #fafafa;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.community a.btn {
+    background: #333;
+    margin-top: 20px;
+}
+
+.community a.btn:hover {
+    background: #555;
+}
+
+/* Download */
+.download {
+    background: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.download pre {
+    background: #eee;
+    padding: 20px;
+    display: inline-block;
+    text-align: left;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.footer p {
+    margin: 0;
+}
